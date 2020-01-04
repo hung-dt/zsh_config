@@ -1,6 +1,26 @@
 # zsh
 ZSH configuration files
 
+## Preparation
+Install zsh:
+```shell
+sudo apt-get update
+sudo apt-get install zsh
+zsh --version
+```
+Change shell:
+```shell
+chsh -s $(which zsh)
+```
+Close the current terminal and open a new one:
+```
+echo $SHELL
+```
+or
+```
+echo $0
+```
+
 ## References
 * [A User's Guide to the Z-Shell](http://zsh.sourceforge.net/Guide/zshguide.html) by Peter Stephenson
 * [zsh-lovers](https://grml.org/zsh/zsh-lovers.html)
@@ -10,3 +30,4 @@ ZSH configuration files
 * [Moving to Zsh](https://scriptingosx.com/2019/06/moving-to-zsh/)
 * [zsh-pony](https://github.com/mika/zsh-pony)
 * [My zsh configuration](https://dustri.org/b/my-zsh-configuration.html) by Julien Voisin
+* [Zsh - ArchWiki](https://wiki.archlinux.org/index.php/Zsh)
