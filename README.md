@@ -31,3 +31,4 @@ echo $0
 * [zsh-pony](https://github.com/mika/zsh-pony)
 * [My zsh configuration](https://dustri.org/b/my-zsh-configuration.html) by Julien Voisin
 * [Zsh - ArchWiki](https://wiki.archlinux.org/index.php/Zsh)
+* [Zsh Utilities functions](http://xgarrido.github.io/zsh-utilities/zsh-utilities-functions.html)
