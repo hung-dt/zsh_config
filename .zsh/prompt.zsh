@@ -18,6 +18,7 @@ preexec()
 # Function to execute before prompt is shown
 precmd()
 {
+    elapsed=0
     if [ $timer ]; then
         elapsed=$(($SECONDS - $timer))
         unset timer
@@ -36,6 +37,8 @@ precmd()
 if [[ -f $HOME/.zsh/git_prompt.zsh ]]; then
     source $HOME/.zsh/git_prompt.zsh
 fi
-PROMPT='%B%F{magenta}%*%f [%F{green}%~%f] $(git_info)
-%b⏳%F{cyan}${elapsed}s%f %B%(?.%F{green}√.%F{red}✘) %F{yellow}%n%f@%F{14}%m%f%b %# '
+
+# some good colors for bg: 133, 166, 202, 208
+PROMPT='%B%K{231}%F{0}  %F{231}%K{202} %* %K{23}%F{202} %F{231} %n@%m %K{33}%F{23} %B%F{233} %~ %F{33}%k $(git_info)
+%B %F{cyan}${elapsed}s%f %(?.%F{28}.%F{red}✘)%f%b  '
 
