@@ -21,6 +21,19 @@ or
 echo $0
 ```
 
+## Install patched fonts for dev
+
+[nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+
+[powerline fonts](https://github.com/powerline/fonts)
+```
+sudo apt-get install fonts-powerline
+```
+
+## zsh git-prompt
+
+Follow this [git-prompt guide](https://joshdick.net/2017/06/08/my_git_prompt_for_zsh_revisited.html)
+
 ## References
 * [A User's Guide to the Z-Shell](http://zsh.sourceforge.net/Guide/zshguide.html) by Peter Stephenson
 * [zsh-lovers](https://grml.org/zsh/zsh-lovers.html)
@@ -32,3 +45,4 @@ echo $0
 * [My zsh configuration](https://dustri.org/b/my-zsh-configuration.html) by Julien Voisin
 * [Zsh - ArchWiki](https://wiki.archlinux.org/index.php/Zsh)
 * [Zsh Utilities functions](http://xgarrido.github.io/zsh-utilities/zsh-utilities-functions.html)
+* [Configure Zsh Options & Plugins](https://www.viget.com/articles/zsh-config-productivity-plugins-for-mac-oss-default-shell/)
