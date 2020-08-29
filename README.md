@@ -34,6 +34,45 @@ sudo apt-get install fonts-powerline
 
 Follow this [git-prompt guide](https://joshdick.net/2017/06/08/my_git_prompt_for_zsh_revisited.html)
 
+## Customize the terminal
+
+### Color schemes with [Gogh](https://mayccoll.github.io/Gogh/)
+
+Before using Gogh, need to install `dconf-cli`, `uuid-runtime`:
+```
+sudo apt install dconf-cli uuid-runtime
+```
+
+Clone Gogh:
+```
+git clone https://github.com/Mayccoll/Gogh
+```
+
+Install color scheme by:
+```
+cd Gogh/themes
+./zenburn.sh #or whatever color scheme you want to use
+```
+
+For Gnome terminal you'll need to create a new Gnome Terminal profile, or else you'll get an error. From the Gnome Terminal Preferences, click the + button next to Profiles, enter a new profile name and click Create. After installing a new color scheme (which is added as a new profile for Gnome Terminal) using Gogh, you can delete this profile.
+
+Some favorite color schemes: *azu, brogrammer, cai, chalkboard, dark-pastel, desert, flat-remix, gotham, kibble, miu, neutron, nightlion-v1, ollie, paul-millr, slate*
+
+* [Gogh guide](https://www.linuxuprising.com/2019/07/179-color-schemes-for-your-gtk-based.html)
+* [Gogh website](https://mayccoll.github.io/Gogh/)
+
+### Fancy prompt with [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+**Install manually:**
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+```
+
+**Configuration**
+
+On the first run, Powerlevel10k configuration wizard will ask you a few questions and configure your prompt. If it doesn't trigger automatically, type `p10k configure`. Configuration wizard creates `~/.p10k.zsh` based on your preferences. Additional prompt customization can be done by editing this file. It has plenty of comments to help you navigate through configuration options.
+
 ## References
 * [A User's Guide to the Z-Shell](http://zsh.sourceforge.net/Guide/zshguide.html) by Peter Stephenson
 * [zsh-lovers](https://grml.org/zsh/zsh-lovers.html)
