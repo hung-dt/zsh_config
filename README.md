@@ -56,7 +56,7 @@ cd Gogh/themes
 
 For Gnome terminal you'll need to create a new Gnome Terminal profile, or else you'll get an error. From the Gnome Terminal Preferences, click the + button next to Profiles, enter a new profile name and click Create. After installing a new color scheme (which is added as a new profile for Gnome Terminal) using Gogh, you can delete this profile.
 
-Some favorite color schemes: *azu, brogrammer, cai, chalkboard, dark-pastel, desert, flat-remix, gotham, kibble, miu, neutron, nightlion-v1, ollie, paul-millr, slate*
+Some favorite color schemes: *Brogrammer, Panda, Shaman, Vs Code Dark+*
 
 * [Gogh guide](https://www.linuxuprising.com/2019/07/179-color-schemes-for-your-gtk-based.html)
 * [Gogh website](https://mayccoll.github.io/Gogh/)
